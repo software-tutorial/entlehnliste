@@ -6,4 +6,4 @@ Die zentrale Ansicht ist eine in html+[paper-css](https://github.com/cognitom/pa
 
 Möglicherweise empfiehlt sich auch das design des restlichen user - interfaces im [PaperCss-Framework](https://www.getpapercss.com/) zu gestalten.
 
-## Github actions
+## Github Actions
