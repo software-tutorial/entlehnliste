@@ -1,6 +1,6 @@
 # Entlehnliste für Medientechnik
 
-Die [Enlehnliste](./docs/client/Enlehnliste_MEDT_v2023.pdf) der Abteilung für Medientechnik soll automatisiert werden.
+Die [Entlehnliste](./docs/client/Enlehnliste_MEDT_v2023.pdf) der Abteilung für Medientechnik soll automatisiert werden.
 
 Die zentrale Ansicht ist eine in html+[paper-css](https://github.com/cognitom/paper-css) implementierte [wysiwyg](https://en.wikipedia.org/wiki/WYSIWYG) Anwendung, die direkt im Browser gedruckt werden kann.
 
