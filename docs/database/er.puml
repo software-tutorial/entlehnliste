@@ -1,0 +1,31 @@
+@startuml entlehnliste
+' verstecke das E im Entitäten-Titel
+hide circle
+
+' verhindere Probleme mit gewinkelten Krähenfüßen
+skinparam linetype ortho
+
+entity "Entität01" as e01 {
+  *e1_id : nummer <<generiert>>
+  --
+  *name : text
+  beschreibung: text
+}
+
+entity "Entitäten02" as e02 {
+  *e2_id : nummer <<generiert>>
+  --
+  *e1_id : nummer <<FS>>
+  andere_details : text
+}
+
+entity "Entität03" as e03 {
+  *e3_id : nummer <<generiert>>
+  --
+  e1_id : nummer <<FS>>
+  andere_details : text
+}
+
+e01 ||..o{ e02
+e01 |o..o{ e03
+@enduml
