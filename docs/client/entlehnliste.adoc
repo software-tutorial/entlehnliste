@@ -13,3 +13,5 @@ Die Entlehnliste wird gedruckt und hat folgendes Aussehen:
 | 
 | 
 |===
+
+TODO: edit the table above so that it looks line the real pdf file.
