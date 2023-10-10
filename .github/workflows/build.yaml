@@ -37,9 +37,15 @@ jobs:
     steps:
       - name: Hello
         run: |
-          echo "hello, world\n" > demo.txt
+          mkdir -p dist
+          echo "hello, world\n" > dist/demo.txt
           pwd
           ls -l
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: hello
+          path: dist
   
   deploy:
     needs:
