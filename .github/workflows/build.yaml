@@ -54,5 +54,12 @@ jobs:
 
     runs-on: ubuntu-22.04
     steps:
-      - run: echo "done"
+      - name: Download our text file
+        uses: actions/download-artifact@v3
+        with:
+          name: hello
 
+      - run: |
+          pwd
+          ls -l
+      - run: echo "done"
