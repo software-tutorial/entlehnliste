@@ -48,6 +48,7 @@ jobs:
           path: dist
   
   deploy:
+    permissions: write-all
     needs:
       - build
       - docs
@@ -62,11 +63,12 @@ jobs:
       - run: |
           pwd
           ls -l
+          echo demo.txt
       - uses: xresloader/upload-to-github-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-            file: "demo.txt"
+            file: demo.txt
             tags: false
             overwrite: true
             update_latest_release: true
