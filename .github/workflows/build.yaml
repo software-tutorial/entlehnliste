@@ -62,4 +62,13 @@ jobs:
       - run: |
           pwd
           ls -l
+      - uses: xresloader/upload-to-github-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+            file: "demo.txt"
+            tags: false
+            overwrite: true
+            update_latest_release: true
+            verbose: true
       - run: echo "done"
