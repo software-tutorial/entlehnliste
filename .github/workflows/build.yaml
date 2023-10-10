@@ -44,7 +44,7 @@ jobs:
   deploy:
     needs:
       - build
-      - documentation
+      - docs
 
     runs-on: ubuntu-22.04
     steps:
